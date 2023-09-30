@@ -1,0 +1,28 @@
+{
+  "name": "astro-tex",
+  "version": "0.1.0",
+  "description": "An Astro component that renders TeX using KaTeX.",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pixelcmtd/astro-tex.git"
+  },
+  "exports": {
+    ".": "./index.ts"
+  },
+  "files": [
+    "src",
+    "index.ts"
+  ],
+  "dependencies": {
+    "katex": "^0.16.8"
+  },
+  "devDependencies": {
+    "@types/katex": "^0.16.3",
+    "astro": "^3.1.4"
+  },
+  "peerDependencies": {
+    "astro": "^3.0.0-beta.0"
+  },
+  "license": "MIT"
+}

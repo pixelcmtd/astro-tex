@@ -1,0 +1,12 @@
+---
+import Katex from "katex";
+import "katex/dist/katex.min.css";
+
+export interface Props {
+    formula: string;
+}
+
+const { formula } = Astro.props;
+---
+
+<Fragment set:html={Katex.renderToString(formula)} />
