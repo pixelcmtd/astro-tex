@@ -4,9 +4,10 @@ import "katex/dist/katex.min.css";
 
 export interface Props {
     formula: string;
+    options?: Katex.KatexOptions;
 }
 
-const { formula } = Astro.props;
+const { formula, options } = Astro.props;
 ---
 
-<Fragment set:html={Katex.renderToString(formula)} />
+<Fragment set:html={Katex.renderToString(formula, options)} />
