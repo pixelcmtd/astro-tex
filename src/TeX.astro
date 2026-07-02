@@ -1,13 +1,13 @@
 ---
-import Katex from "katex";
+import { type KatexOptions, renderToString } from "katex";
 import "katex/dist/katex.min.css";
 
 export interface Props {
     formula: string;
-    options?: Katex.KatexOptions;
+    options?: KatexOptions;
 }
 
 const { formula, options } = Astro.props;
 ---
 
-<Fragment set:html={Katex.renderToString(formula, options)} />
+<Fragment set:html={renderToString(formula, options)} />
